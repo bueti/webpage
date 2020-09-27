@@ -1,0 +1,7 @@
+{{/* textbox width = width - width of logo and search button */}}
+{{ $textboxwidth := sub (int (.Get 1)) 133 }}
+<iframe
+src="https://duckduckgo.com/search.html?width={{ $textboxwidth }}&&site={{ .Get 0 }}&prefill={{ .Get 0 }}&focus=yes"
+style="overflow:hidden;margin:0 auto;display:block;padding:0;width:{{ .Get 1 }}px;height:60px;"
+frameborder="0">
+</iframe>

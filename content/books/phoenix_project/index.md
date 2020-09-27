@@ -17,7 +17,7 @@ Because value is created only when our services are running in production, we mu
 
 The Three Ways describe the values and philosophies that frame the processes, procedures, practices of DevOps, as well as the prescriptive steps.
 
-![The Three Ways](/images/threeways.png)
+![The Three Ways](threeways.png "The Three Ways")
 
 ### The Principles of Flow
 
