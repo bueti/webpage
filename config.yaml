@@ -1,7 +1,10 @@
 baseURL: https://www.bueti-online.ch
 languageCode: en-us
 title: Personal website and blog
-theme: hugo-refresh
+theme:
+  - plausible-hugo
+  - hugo-refresh
+
 # theme: ../..
 
 #########################################
@@ -97,6 +100,10 @@ params:
     subtitle: This is not the page you were looking for...
     # option to specify the width of the image in the 404 page
     imageWidth: 500px
+
+  plausible:
+    enable: true
+    domain: "bueti-online.ch"
 
   # homepage options
   homepage:
