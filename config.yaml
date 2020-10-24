@@ -127,13 +127,13 @@ params:
     # the starting folder is configure in "assetDir" of this file
     logo: "/images/refresh-square.svg"
     # option to specify your contact email in the footer
-    email:
-      link: me@bueti-online.ch
-      title: My Email
+    # email:
+    #   link: me@bueti-online.ch
+    #   title: My Email
     # option to specify your linkedin profile in the footer
     linkedin:
       link: in/benjamin-bütikofer-59584b64
-      title: My LinkedIn
+      title: LinkedIn
     # option to specify your facebook account in the footer;
     # **uncomment** the lines below to show in footer
     # facebook:
