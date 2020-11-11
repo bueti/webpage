@@ -21,8 +21,6 @@ DefaultContentLanguage: en
 # Option to disable additional language in your site.
 # disableLanguages: ["ru"]
 
-disableKinds: ["sitemap","RSS"]
-
 # Option to specify that all links will be open in a new tab.
 blackfriday:
   hrefTargetBlank: true
