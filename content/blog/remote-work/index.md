@@ -1,40 +1,37 @@
 ---
-title: How To Remote Work
+title: How To Work Remotely
 summaryImage: "remote-work.jpg"
 keepImageRatio: true
 summary: This post explains the adjustments that were needed to the way we work in the SRE Team at Ricardo when we went fully remote.
 tags: [ "blog", "peopleops"]
 ---
 
-After a nice and calm summer the second wave caught up with us here in Switzerland again and we are back to working from home full time.
+After a nice and calm summer the second wave caught up with us here in Switzerland and we are back to working from home full time.
 
-When the federal government mandated that people work from home whenever possible many companies got thrown into a situation they weren't prepared to handle. Nevertheless, all over the world people proved how adaptable humans are, and given the circumstances, I think this big experiment was mostly a success.
+When the federal government mandated that people work from home whenever possible, many companies were thrown into a situation they weren’t prepared to handle. Nevertheless, all over the world people proved how adaptable humans are. Given the circumstances, I think this big experiment was mostly a success.
 
-Luckily, even before the Coronavirus Pandemic and prior to my [sabbatical](https://www.granviaje.ch) I worked with distributed teams and I managed a team of engineers in three different timezones.
+Luckily, even before the Coronavirus Pandemic and prior to my [sabbatical](https://www.granviaje.ch), I had experience with remote work as I worked with distributed teams and I managed a team of engineers in three different timezones.
 
-I can't stress enough that you cannot just transplant your office processes into the remote world and think things will work the same. They might for a while but long-term your team will burn-out.
+I can't stress enough that you cannot just transplant your office processes into the remote world and think things will work the same. They might for a while, but long-term your team will burn-out.
 
 Working from home (or working with a distributed team) requires a different philosophy.
 
 ## Accommodate the people who do not have a "home office"
 
-We need to acknowledge that not everybody has the environment at home to work full time and we have to keep this in mind.
+We need to acknowledge and keep in mind that not everybody has the environment at home to work full time.
 
-For people in small apartments, with families and kids, etc. it can be difficult to get something done. Especially when schools are closed.
-Give your employees the time to breathe they need, support them by providing the necessary equipment to work from home, and let them chose the hours that work best for them. If they are not able to put in 8 hours of work, that's ok too. A lockdown is temporary.
-Family goes first. [No, we are not family at work](https://m.signalvnoise.com/the-company-isnt-a-family/).
+For people in smaller apartments with families and kids, for example, it can be difficult to get something done. This is especially true when schools are closed. Give your employees the time to breathe they need, support them by providing the necessary equipment to work from home, and let them chose the hours that work best for them. If they are not able to put in 8 hours of work, that’s ok too. A lockdown is temporary. Family goes first. [No, we are not family at work](https://m.signalvnoise.com/the-company-isnt-a-family/).
 
 ## Asynchronous Communication
 
 Working with a fully remote team provides some unique chances to improve on what most people don’t like about offices: Constant interruptions, noise, and long meetings
 
-**If** you have a place to work at home, the quietness and calmness of working from home can be a godsend.
-However, we need to be mindful of the attention hogs like Slack and other real-time communication tools.
-One of the most frequent complaints I hear is that people can't focus on a task because of constant interruptions.
+**If** you have a dedicated home office, the quietness and calmness of working from home can be a godsend. However, we need to be mindful of the attention hogs like Slack and other real-time communication tools.
+One of the most frequent complaints I hear is that people can’t focus on a task because of constant interruptions.
 
-As a team leads, set the guidelines, and embrace asynchronous communication.
+As a team lead, set the guidelines and embrace asynchronous communication.
 
-It takes a bit to get used to but writing down a question properly often results in new insights and you might not even need somebody else's input after formulating the problem.
+It takes a while to get used to, but writing down a question properly often results in new insights and you might not even need somebody else’s input after formulating the question.
 
 ## Keeping the Spirit
 
@@ -58,11 +55,11 @@ This setup allows the rest of the team to disable most notifications and work un
 
 ## Personal Well-Being
 
-Everybody is different and has different needs. Following a few recommendations that have worked for me in the past and might be helpful for others. In the end, you have to figure out what works and what is important for your well-being.
+Everybody is different and has different needs. Following are a few recommendations that have worked for me in the past and might be helpful for others. In the end, you have to figure out what works and what is important for your well-being.
 
 - Don’t forget to treat yourself. Go for a walk over lunch, eat fruits, do something to relax. Not going to the office also means you will miss out on all the walking you usually do to get to the office and inside the office.
-- Set up your home office comfortable and ergonomic. Get an adjustable desk and chair. Invest in a good 4k screen (e.g. HP Z27 or Dell U2720Q), a good keyboard, and mouse (e.g. Logitech MX Master 3).
-- There are no hero awards for working overtime. Of course, sometimes there is the need for a short sprint, but we are in it for a marathon.
+- Make your home office comfortable and ergonomic. Get an adjustable desk and chair. Invest in a good 4k screen (e.g. HP Z27 or Dell U2720Q), a good keyboard and a mouse (e.g. Logitech MX Master 3).
+- There are no hero awards for working overtime. Of course, sometimes there is the need for a short sprint, but we are in it for the long haul.
 - Track your time for yourself. You’ll be surprised how much you work.
 - If you have trouble winding down at the end of the day, one thing that can help is to ask yourself "Have I done a good day's work?" Answering that question is liberating. Often, if the answer is an easy "yes", you can stop working feeling satisfied that something important got accomplished. Should the answer be "no", you can treat it as an off-day and explore the [Five Whys](https://en.wikipedia.org/wiki/Five_whys).
 - Creating a routine can help to get into a working mood and out of working wood. Eg. walk around the block before and after work.
