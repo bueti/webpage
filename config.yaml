@@ -6,6 +6,7 @@ theme:
   - hugo-refresh
 
 # theme: ../..
+css: [ 'css/custom.css' ]
 
 #########################################
 ######## Uncomment this option ##########
@@ -154,6 +155,10 @@ params:
     #    title: Instagram
     # option to specify the copyright in the footer
     copyright: Benjamin Buetikofer - 2020
+
+privacy:
+  youtube:
+    privacyEnhanced: true
 
 ###################################################################
 ################## multilanguage support options ##################
