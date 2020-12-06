@@ -21,30 +21,30 @@ The following is a loose transcript of the talk.
 
 ### Intro
 
-When I was six years old, my parents bought a Land Rover Defender. Ever since then, I was fascinated by these cars. When I grew older I learned that people are traveling around the world in their cars. In the age of Instagram, this type of travel was called Overlanding.
+When I was six years old, my parents bought a Land Rover Defender. Ever since then, I was fascinated by these cars. When I grew older I learned that people are traveling around the world in their cars. In the age of Instagram, this type of travel is called Overlanding.
 This talk is about Overlanding the Americas and how Overlanding is not that different from Operations.
 
 ### Purpose
 
-Once I've fulfilled my childhood dream of owning a Land Rover it quickly realized that the car isn't very practical, especially in Switzerland where every (legal) road to drive is paved and every corner has been visited. Thus, it was clear I want to become an "overlander" and travel the world for an unspecified time.
+Once I fulfilled my childhood dream of owning a Land Rover I quickly realized that the car isn't very practical, especially in Switzerland. Every (legal) road  is paved and every corner has been visited. It was clear I want to become an "Overlander" and travel the world for an unspecified time.
 
-When I started at Ricardo in February 2020 I quickly realized that the SRE team was lacking purpose. Asking my peers and teammates about the team's mission I got many different answers. So my first task was to understand what we as SRE should be doing and aiming for at Ricardo.
+When I started at Ricardo in February 2020 I quickly realized that the SRE team was lacking purpose. Asking my peers and teammates about the team's mission I got many different answers. My first task was to understand what we as SRE should be doing and aiming for at Ricardo.
 
 ### Impediments
 
 Now we know why we are here, so what's stopping us from achieving our mission?
 
 When Overlanding you can count on the fact that there will be obstacles waiting for you. Be it a fallen tree, a road closure due to a landslide, or a technical defect. You will have to deal with difficulties.
-In Operations usually, the biggest struggle is all the unplanned work. If things aren't going well, firefighting is the norm and a lot of effort from individuals are required to keep to lights on. This is not sustainable, people will burn out, it will bring all innovation to a halt, and you worsen the situation.
+In Operations, usually the biggest struggle is all the unplanned work. If things aren't going well, firefighting is the norm and a lot of effort from individuals are required to keep to lights on. This is not sustainable; people will burn out, it will bring all innovation to a halt, and you worsen the situation.
 Your first step must be to identify the bottlenecks and stop the bleeding.
 
->Any improvements made anywhere besides the bottleneck are an illusion.
+>Improvements made anywhere besides the bottleneck are an illusion.
 
 What helped me in the past is to work in very short cycles. Set clear goals and targets for one week maybe two. Work with the Plan-Do-Check-Act method.
 
 ### Adapt
 
-Some wise guy once said: “Life is what happens to us while we are making other plans.”
+A wise person once said: “Life is what happens to us while we are making other plans.”
 Whatever your plan is, reality will be different. Adapting your plans and goals is inevitable.
 
 When we were in Ecuador we've camped at a nice Laguna which was a long and bumpy ride off the next main road. Google Maps showed a minor road going through the mountains, short-cutting the long detour that we would have had to take if we'd go back the way we came. You would think that after more than a year on the road, we'd know better than to trust Google Maps.
