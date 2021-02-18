@@ -2,4 +2,4 @@
 
 The source for [bueti-online.ch](https://bueti-online.ch).
 
-Hugo + https://github.com/PippoRJ/hugo-refresh Theme.
+Hugo + [hugo-refresh](https://github.com/PippoRJ/hugo-refresh)-theme.
