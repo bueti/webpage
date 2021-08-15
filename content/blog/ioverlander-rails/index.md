@@ -6,7 +6,7 @@ summary: Volunteering at iOverlander made me realize what a productivity enabler
 tags: [ "blog", "rails"]
 ---
 
-God knows I'm no developer! Nevertheless, this doesn't stop me from trying to code things. It might not be pretty but it usually works ;-)
+I'm not a developer! Nevertheless, this doesn't stop me from trying to code things. It might not be pretty but it usually works ;-)
 
 When we were traveling we've used an online service called [iOverlander](https://ioverlander.com) a lot. It was a super helpful tool for us and pretty much any other overlander we met.
 
