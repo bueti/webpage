@@ -148,6 +148,10 @@ params:
     twitter:
        link: gran_viaje
        title: Twitter
+    mastodon:
+       user: bbu
+       server: hachyderm.io
+       title: Mastodon
     # option to specify your instagram username in the footer;
     # **uncomment** the below lines to show in footer
     # instagram:
