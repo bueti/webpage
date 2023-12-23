@@ -4,6 +4,7 @@ summaryImage: "logo.png"
 keepImageRatio: true
 tags: [ "blog" ]
 summary: I wrote a tool that puts a backup into a Docker image and stores it on a private repo in Docker Hub.
+hideLastModified: true
 ---
 
 A few years ago I had a problem. When I was working on iOverlander I realized that there wasn't an automated PostgreSQL database backup. This was a problem because the database changes very frequently.  Thousands of users are creating new Points of Interest and upload check-ins daily and they are all stored in a PostgreSQL database. This is the core of iOverlander, thus having a backup is kinda important.

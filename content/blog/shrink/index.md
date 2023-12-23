@@ -4,11 +4,14 @@ summaryImage: "logo.png"
 keepImageRatio: true
 summary: Shrink.ch, a user-friendly Go-based URL shortener with features auto-generated and custom short URLs, QR-code generation, and visit tracking.
 tags: [ "blog", "go"]
+hideLastModified: true
 ---
 
 At work, I'm usually all about Go for CLI stuff and automation. After dabbling in Rails and creating a bunch of web apps, I figured it was time to try the web world with Go. The challenge? Building an URL shortener. And hey, since the [shrink.ch](https://shrink.ch) domain was up for grabs, why not give it a shot?
 
-## What's Inside [shrink.ch](https://shrink.ch):
+## What's Inside [shrink.ch](https://shrink.ch)
+
+{{< figure src="page.png" width="1024" >}}
 
 ### 1. Features That Matter
 This little tool comes packed with some nifty features that make it more than just your average URL shortener.
@@ -23,7 +26,7 @@ This little tool comes packed with some nifty features that make it more than ju
 
 - **Visit Counting** Want to know how popular your links are? [shrink.ch](https://shrink.ch)'s got you covered with a visit count feature.
 
-{{< figure src="page.png" width="1024" >}}
+- **CLI Tool** You don't like websites? Don't fret there's also a CLI tool available! Simply install it with Brew: `brew install bueti/tap/shrink`
 
 ### 2. Tech Talk Made Simple
 Behind the scenes, [shrink.ch](https://shrink.ch) is running on a straightforward tech stack that gets the job done.

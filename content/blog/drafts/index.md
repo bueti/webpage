@@ -4,6 +4,7 @@ summaryImage: "drafts2.png"
 keepImageRatio: true
 summary: Store unfinished entries as drafts!
 tags: [ "blog" ]
+hideLastModified: true
 ---
 
 After writing a few entries on [Gobbledygook](https://gobbledygook.bueti-online.ch) I realized that a draft feature would be useful. I rarely have time to write a whole entry in one go, I also like to read it a bit later to spot typos and other inconsistencies. Luckily Rails makes it super easy to add columns to a database and adding a drafts feature was straight forward.

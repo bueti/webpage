@@ -4,6 +4,7 @@ summaryImage: "logo.png"
 keepImageRatio: true
 summary: I built a services to explain tech jargon
 tags: [ "blog" ]
+hideLastModified: true
 ---
 
 A few weeks ago I was discussing with a customer care agent at Ricardo how to handle certain requests. This discussion made me realize how much jargon we engineers are using when talking about work and how this is an obstacle for other people to understand what we do, but also it's a hurdle for newcomers to get into this field of work.

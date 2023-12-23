@@ -4,6 +4,7 @@ summaryImage: "logo.png"
 keepImageRatio: true
 summary: Volunteering at iOverlander made me realize what a productivity enabler Rails is.
 tags: [ "blog", "rails"]
+hideLastModified: true
 ---
 
 I'm not a developer! Nevertheless, this doesn't stop me from trying to code things. It might not be pretty but it usually works ;-)
