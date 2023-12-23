@@ -23,6 +23,8 @@ This little tool comes packed with some nifty features that make it more than ju
 
 - **Visit Counting:** Want to know how popular your links are? [shrink.ch](https://shrink.ch)'s got you covered with a visit count feature.
 
+{{< figure src="page.png" width="1024" >}}
+
 ### 2. Tech Talk Made Simple:
 Behind the scenes, [shrink.ch](https://shrink.ch) is running on a straightforward tech stack that gets the job done.
 
