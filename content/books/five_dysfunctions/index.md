@@ -1,6 +1,10 @@
 ---
 title: The Five Dysfunctions of a Team
-summaryImage: "five_summary.jpg"
+date: 2019-03-20
+cover:
+  image: "five_summary.jpg"
+  alt: "Five Dysfunctions of a Team book summary"
+  relative: true
 keepImageRatio: true
 summary: Abscence of Trust, Fear of Conflict, Lack of Commitment, Avoidance of Accountability & Inattention to Results.
 tags: [ "books", "peopleops"]

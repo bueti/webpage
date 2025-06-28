@@ -1,5 +1,6 @@
 ---
 title: Bocker - Backup and Restore in Docker
+date: 2023-02-10
 summaryImage: "logo.png"
 keepImageRatio: true
 tags: [ "blog" ]
@@ -28,20 +29,20 @@ And so I decided to ditch the Shell script and write a CLI tool in Go to encode 
 I don't think this is gonna be useful for a lot of people, but it is a fun project which helped me learn writting Go code. I have many ideas for improvements and might implement some of them in the future (for example, use the Docker SDK instead of the docker cli).
 
 If you are interested you can install bocker via my Homebrew:
-{{< code language="shell" >}}
+```shell
 brew install bueti/tap/bocker
-{{< /code >}}
+```
 
 Or
-{{< code language="shell" line-numbers=false >}}
+```shell
 brew tap bueti/tap
 brew install bocker
-{{< /code >}}
+```
 
 or download the binary on Github: https://github.com/bueti/bocker/releases
 
 How does it work? Pretty simple:
-{{< codeWide language="shell" line-numbers=false >}}
+```shell
 $ bocker --help
 Bocker is a command line tool which creates a backup from a PostgreSQL database, 
 wraps it in a Docker image, and uploads it to Docker Hub. 
@@ -64,19 +65,19 @@ Flags:
   -r, --repository string     Docker Repository
 
 Use "bocker [command] --help" for more information about a command.
-{{< /codeWide >}}
+```
 
 Example Backup:
-{{< codeWide language="shell" line-numbers=false >}}
+```shell
 deployer@staging:~$ ./bocker backup -c 491d8559477c -s ioverlander_development -r ioverlander_backup -u ioverlander
 INFO	2023/02/05 15:59:41 Creating backup...
 INFO	2023/02/05 16:01:22 Building image...
 INFO	2023/02/05 16:01:43 Pushing image...
 Published image bueti/ioverlander_backup:2023-02-05_15-59-41
-{{< /codeWide >}}
+```
 
 Example Restore:
-{{< codeWide language="shell" line-numbers=false >}}
+```shell
 $ bocker restore -c a16952e2d855 -o ioverlander -t ioverlander_development \
     -s ioverlander_development -r ioverlander_backup --tag 2023-02-05_15-59-41
 INFO    2023/02/05 17:14:26 Pulling image (bueti/ioverlander_backup:2023-02-05_15-59-41) from registry...
@@ -86,4 +87,4 @@ INFO    2023/02/05 17:14:44 Database already exists, skipping creation...
 INFO    2023/02/05 17:14:53 Restoring database...
 INFO    2023/02/05 17:16:41 Some errors during restore where ignored.
 Database successfully restored.
-{{< /codeWide >}}
+```

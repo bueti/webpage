@@ -1,7 +1,11 @@
 ---
 title: Rework
+date: 2019-09-10
 hideLastModified: true
-summaryImage: "rework_summary.jpg"
+cover:
+  image: "rework_summary.jpg"
+  alt: "Rework book summary"
+  relative: true
 keepImageRatio: true
 summary: If you can’t fit everything you want to do within 40 hours per week, you need to get better at picking what to do, not work longer hours.
 tags: [ "books", "peopleops"]
