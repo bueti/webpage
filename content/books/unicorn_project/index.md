@@ -1,5 +1,6 @@
 ---
 title: The Unicorn Project
+date: 2020-01-25
 hideLastModified: true
 summaryImage: "unicorn_summary.jpg"
 keepImageRatio: true

@@ -1,9 +1,7 @@
 baseURL: https://www.bueti-online.ch
 languageCode: en-us
 title: Personal website and blog
-theme:
-  - plausible-hugo
-  - hugo-refresh
+theme: PaperMod
 
 # theme: ../..
 css: [ 'css/custom.css' ]
@@ -37,128 +35,146 @@ Taxonomies:
 # https://bulkitv2.cssninja.io/_components-icons-fa.html
 
 params:
+  # Site settings
+  env: production
+  description: "Personal website and blog by Benjamin Buetikofer"
+  keywords: [Benjamin, Buetikofer, blog, personal, SRE, DevOps]
+  author: Benjamin Buetikofer
+  images: ["/images/me.png"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto
+  disableThemeToggle: false
+
+  # Analytics
   plausible:
     enable: true
     domain: bueti-online.ch
 
-  # parameter used to specify the number of article in each row
-  # for the summary pages, the possible options are: 2, 3, 4, 5 or 6
-  articlesPerRow: 3
+  # Home page
+  homeInfoParams:
+    Title: "Hi there 👋"
+    Content: Welcome to my personal website and blog. I'm Benjamin Buetikofer, sharing thoughts on technology, overlanding, and life.
 
-  # option to specify the favicon image of the site
-  # the path is relative to the folder "assetDir" of this configuration
-  favicon: "/images/favicon.svg"
+  # Social icons
+  socialIcons:
+    - name: linkedin
+      url: "https://linkedin.com/in/benjamin-bütikofer-59584b64"
+    - name: github
+      url: "https://github.com/bueti"
+    - name: twitter
+      url: "https://twitter.com/gran_viaje"
+    - name: mastodon
+      url: "https://hachyderm.io/@bbu"
 
-  # parameter used to specify if you want to minify the imported js
-  jsMinify: true
-  # parameter used to specify if you want to minify the imported css
-  cssMinify: true
-  # parameter used to specify if you want to calculate the css integrity
-  cssIntegrity: true
-  # parameter used to specify if you want to calculate the js integrity
-  jsIntegrity: true
-  # option to specify the main colour of the theme
-  mainColour: "#6699ff"
+  # Menu
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: true
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
 
-  # summary options
-  summary:
-    # option to specify the default image in the summary list
-    # the starting folder is configure in "assetDir" of this file
-    defaultImage : "/images/default_summary.jpg"
+  # Search
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 10
+    keys: ["title", "permalink", "content"]
 
-  # loading options
-  loading:
-    # option to specify the loading image
-    # the starting folder is configure in "assetDir" of this file
-    image: "/images/loaders/rings.svg"
+  # Assets
+  assets:
+    disableHLJS: true
+    disableFingerprinting: true
+    favicon: "/images/favicon.svg"
+    favicon16x16: "/images/favicon.svg"
+    favicon32x32: "/images/favicon.svg"
+    apple_touch_icon: "/images/favicon.svg"
+    safari_pinned_tab: "/images/favicon.svg"
 
-  # main pages options
-  mainPage:
-    # option to specify the main font of the theme
-    fontFamily: "Open Sans"
+  # Label
+  label:
+    text: "Benjamin Buetikofer"
+    icon: "/images/me.png"
+    iconHeight: 35
 
-  # sidebar options
-  sidebar:
-    # option to specify the logo of the sidebar
-    # the starting folder is configure in "assetDir" of this file
-    logo: "/images/refresh-square.svg"
-    # option to specify the font of the sidebar
-    fontFamily: "Open Sans" # "Open Sans"
-
-  # navbar options
-  navbar:
-    # option to specify the font used in the navbar
-    fontFamily: "Open Sans"
-    # option to show the little logos on the side of the navbar items
-    showIcons: false
-
-  # 404 page options
-  pagNotFound:
-    # option to specify the main picture of the sidebar
-    # the starting folder is configure in "assetDir" of this file
-    image: "/images/avataaars_404.png"
-    # option to specify the title of the 404 page
-    title: 404 Page Not Found :(
-    # option to specify the subtitle of the 404 page
-    subtitle: This is not the page you were looking for...
-    # option to specify the width of the image in the 404 page
-    imageWidth: 500px
-
-  # homepage options
-  homepage:
-    # this options let you specify if you want a link to the homepage
-    # it can be: "none", "menu", "footer" or "menu+footer"
-    linkPosition: "menu"
-    # this options let you specify the text of the link to the homepage
-    linkText: "Home"
-    # option to specify the title in the homepage
+  # Profile mode
+  profileMode:
+    enabled: false
     title: Benjamin Buetikofer
-    # option to specify the subtitle in the homepage
-    subtitle: Personal website and blog
-    # option to specify image in the homepage
-    image: "/images/me.png" # worker.svg
-    # option to specify the width of the image in the homepage
-    imageWidth: 500px
+    subtitle: "Personal website and blog"
+    imageUrl: "/images/me.png"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: Benjamin Buetikofer
 
-  # footer options
-  footer:
-    # option to specify the logo in the footer
-    # the starting folder is configure in "assetDir" of this file
-    logo: "/images/refresh-square.svg"
-    # option to specify your contact email in the footer
-    # email:
-    #   link: me@bueti-online.ch
-    #   title: My Email
-    # option to specify your linkedin profile in the footer
-    linkedin:
-      link: in/benjamin-bütikofer-59584b64
-      title: LinkedIn
-    # option to specify your facebook account in the footer;
-    # **uncomment** the lines below to show in footer
-    # facebook:
-    #   link: your.username
-    #   title: Facebook
-    # option to specify your github account in the footer;
-    # **uncomment** the below lines to show in footer
-    github:
-      link: bueti
-      title: Github
-    # option to specify your twitter username in the footer;
-    # **uncomment** the below lines to show in footer
-    twitter:
-       link: gran_viaje
-       title: Twitter
-    mastodon:
-       user: bbu
-       server: hachyderm.io
-       title: Mastodon
-    # option to specify your instagram username in the footer;
-    # **uncomment** the below lines to show in footer
-    # instagram:
-    #    link: username
-    #    title: Instagram
-    # option to specify the copyright in the footer
-    copyright: Benjamin Buetikofer - 2020
+  # Comments - Giscus (GitHub Discussions)
+  giscus:
+    repo: "bueti/webpage"
+    repoId: "MDEwOlJlcG9zaXRvcnkyOTgwMzk4NjI="
+    category: "Announcements"
+    categoryId: "DIC_kwDOEcO6Ns4CsJDs"
+    mapping: "pathname"
+    strict: "0"
+    reactionsEnabled: "1"
+    emitMetadata: "0"
+    inputPosition: "top"
+    theme: "preferred_color_scheme"
+    lang: "en"
+    loading: "lazy"
+
+# Menu
+menu:
+  main:
+    - identifier: blog
+      name: Blog
+      url: /blog/
+      weight: 10
+    - identifier: books
+      name: Books
+      url: /books/
+      weight: 20
+    - identifier: talks
+      name: Talks
+      url: /talks/
+      weight: 30
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 40
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 50
+
+# Site-wide content sorting
+pagination:
+  pagerSize: 10
+  path: "page"
+
+# Taxonomies sorting
+taxonomies:
+  tag: "tags"
+  category: "categories"
+
+# Output formats for search
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
 
 privacy:
   youtube:

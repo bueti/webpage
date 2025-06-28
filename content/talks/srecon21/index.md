@@ -1,5 +1,6 @@
 ---
 title: SREcon 21
+date: 2021-10-15
 summaryImage: "srecon.png"
 keepImageRatio: true
 summary: My recommended talks of SREcon 21 and of course also mine!

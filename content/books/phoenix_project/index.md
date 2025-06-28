@@ -1,5 +1,6 @@
 ---
 title: Phoenix Project
+date: 2018-06-15
 hideLastModified: true
 summaryImage: "phoenix_summary.jpg"
 summary: "In DevOps, we typically define our technology value stream as the process required to convert a business hypothesis into a technology-enabled service that delivers value to the customer."

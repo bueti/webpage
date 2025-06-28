@@ -1,5 +1,6 @@
 ---
 title: The Five Dysfunctions of a Team
+date: 2019-03-20
 summaryImage: "five_summary.jpg"
 keepImageRatio: true
 summary: Abscence of Trust, Fear of Conflict, Lack of Commitment, Avoidance of Accountability & Inattention to Results.
