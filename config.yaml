@@ -52,22 +52,24 @@ params:
   # Home page
   homeInfoParams:
     Title: "Hi there 👋"
-    Content: Welcome to my personal website and blog. I'm Benjamin Buetikofer, sharing thoughts on technology, overlanding, and life.
+    Content: Welcome to my personal website and blog. I'm passionate about
+      building resilient systems and effective teams. When I'm not optimizing infrastructure or diving into DevOps practices, you'll find me in the mountains.
 
   # Social icons
   socialIcons:
-    - name: linkedin
-      url: "https://linkedin.com/in/benjamin-bütikofer-59584b64"
-    - name: github
-      url: "https://github.com/bueti"
-    - name: twitter
-      url: "https://twitter.com/gran_viaje"
+    - name: bluesky
+      url: "https://bsky.app/profile/bueti-online.ch"
     - name: mastodon
       url: "https://hachyderm.io/@bbu"
+    - name: github
+      url: "https://github.com/bueti"
+    - name: linkedin
+      url: "https://linkedin.com/in/benjamin-bütikofer-59584b64"
 
   # Menu
   ShowReadingTime: true
   ShowShareButtons: true
+  ShareButtons: ["bluesky", "ycombinator", "linkedin", "reddit"]
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
@@ -184,5 +186,5 @@ privacy:
 ###################################################################
 languages:
   en:
-    languageName:       English
-    weight:             1
+    languageName: English
+    weight: 1
