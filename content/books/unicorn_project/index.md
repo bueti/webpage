@@ -2,7 +2,10 @@
 title: The Unicorn Project
 date: 2020-01-25
 hideLastModified: true
-summaryImage: "unicorn_summary.jpg"
+cover:
+  image: "unicorn_summary.jpg"
+  alt: "Unicorn Project book summary"
+  relative: true
 keepImageRatio: true
 summary: It’s all about how our daily work feels. Is our work marked by boredom and waiting for other people to get things done on our behalf
 tags: [ "books", "devops"]

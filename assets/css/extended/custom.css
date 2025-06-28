@@ -1,0 +1,47 @@
+/* Custom CSS for PaperMod theme */
+
+/* Reduce cover image size for better visual balance */
+.entry-cover {
+    max-width: 400px; /* Limit maximum width */
+    margin: 0 auto var(--gap); /* Center the cover and maintain bottom margin */
+}
+
+.entry-cover img {
+    width: 100%; /* Maintain responsive behavior within the limited container */
+    height: auto;
+    max-width: 400px; /* Ensure image doesn't exceed this size */
+}
+
+/* For single post pages, allow slightly larger cover images */
+.post-single .entry-cover {
+    max-width: 500px;
+}
+
+.post-single .entry-cover img {
+    max-width: 500px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    .entry-cover,
+    .entry-cover img {
+        max-width: 300px; /* Smaller on mobile devices */
+    }
+    
+    .post-single .entry-cover,
+    .post-single .entry-cover img {
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .entry-cover,
+    .entry-cover img {
+        max-width: 250px; /* Even smaller on very small screens */
+    }
+    
+    .post-single .entry-cover,
+    .post-single .entry-cover img {
+        max-width: 280px;
+    }
+}

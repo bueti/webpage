@@ -4,7 +4,6 @@ title: Personal website and blog
 theme: PaperMod
 
 # theme: ../..
-css: [ 'css/custom.css' ]
 
 #########################################
 ######## Uncomment this option ##########
