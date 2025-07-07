@@ -1,10 +1,11 @@
 ---
 title: Why Rails is Awesome
 date: 2020-03-15
-summaryImage: "logo.png"
-keepImageRatio: true
+cover:
+  image: "logo.png"
+  relative: true
 summary: Volunteering at iOverlander made me realize what a productivity enabler Rails is.
-tags: [ "blog", "rails"]
+tags: ["blog", "rails"]
 hideLastModified: true
 ---
 
@@ -35,11 +36,11 @@ All the new features are part of a bigger change that will be introduced with th
 You probably wonder, what has all of this to do with the title of the post?
 As I said in the beginning, I am not a developer. But thanks to Rails even I can create these features.
 
-* Thanks to [ActiveStorage](https://edgeguides.rubyonrails.org/active_storage_overview.html), adding avatars was a piece of cake.
-* Making favorites searchable? An easy feat thanks to [Ransack](https://github.com/activerecord-hackery/ransack).
-* Reducing the number of spam accounts be requiring email confirmation? Don't fret, [Devise](https://github.com/heartcombo/devise) has you covered.
-* Implement hCaptcha? Again, there's a [Gem](https://github.com/CapSens/hcaptcha) available that will do the heavy lifting for you.
-* You need to delete thousands of parent-child relations in your database (hello spammers...)? Luckily, [somebody](https://blog.getcensus.com/cascading-deletes-in-rails/) has already solved that for you too.
+- Thanks to [ActiveStorage](https://edgeguides.rubyonrails.org/active_storage_overview.html), adding avatars was a piece of cake.
+- Making favorites searchable? An easy feat thanks to [Ransack](https://github.com/activerecord-hackery/ransack).
+- Reducing the number of spam accounts be requiring email confirmation? Don't fret, [Devise](https://github.com/heartcombo/devise) has you covered.
+- Implement hCaptcha? Again, there's a [Gem](https://github.com/CapSens/hcaptcha) available that will do the heavy lifting for you.
+- You need to delete thousands of parent-child relations in your database (hello spammers...)? Luckily, [somebody](https://blog.getcensus.com/cascading-deletes-in-rails/) has already solved that for you too.
 
 Rails might not be the most flashy technology but the productivity it enables even for amateurs is mind blowing. You don't have to solve the everything anew, you can focus on providing new features for your yours. In addition to that, it just works: Thousands of travellers are using our service, we have over 25'000 visitors per day, the Android app has been installed over 500'000 times. And all of that with a core development "team" of two to three people.
 

@@ -1,10 +1,11 @@
 ---
 title: My Go-Based URL Shortener Project
 date: 2024-03-15
-summaryImage: "logo.png"
-keepImageRatio: true
+cover:
+  image: "logo.png"
+  relative: true
 summary: Shrink.ch, a user-friendly Go-based URL shortener with features auto-generated and custom short URLs, QR-code generation, and visit tracking.
-tags: [ "blog", "go"]
+tags: ["blog", "go"]
 hideLastModified: true
 ---
 
@@ -15,6 +16,7 @@ At work, I'm usually all about Go for CLI stuff and automation. After dabbling i
 {{< figure src="page.png" width="1024" >}}
 
 ### 1. Features That Matter
+
 This little tool comes packed with some nifty features that make it more than just your average URL shortener.
 
 - **User Registration with Email Verification** Keep things secure with user registrations getting the email check before diving in.
@@ -30,6 +32,7 @@ This little tool comes packed with some nifty features that make it more than ju
 - **CLI Tool** You don't like websites? Don't fret there's also a CLI tool available! Simply install it with Brew: `brew install bueti/tap/shrink`
 
 ### 2. Tech Talk Made Simple
+
 Behind the scenes, [shrink.ch](https://shrink.ch) is running on a straightforward tech stack that gets the job done.
 
 - **Frontend with Tailwind** I'm no designer, but Tailwind made it easy to whip up a clean and functional frontend.
@@ -39,7 +42,9 @@ Behind the scenes, [shrink.ch](https://shrink.ch) is running on a straightforwar
 - **Echo Web Framework and GORM** Echo makes web development less of a headache, and GORM keeps things smooth when dealing with databases.
 
 ### 3. Deploying on a Budget
+
 Building [shrink.ch](https://shrink.ch) wasn't just about features; it was about doing it without breaking the bank. I opted for an OVH VPS because it's a steal at $1 per month. And to keep things simple, GitHub Actions handle the build and deployment.
 
 ### 4. Dive into the Code
+
 Curious about how it all works? The whole codebase is up on [GitHub](https://github.com/bueti/shrinkster). Feel free to check it out, maybe even lend a hand if you're up for it.
