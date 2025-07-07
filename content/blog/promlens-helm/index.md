@@ -1,10 +1,11 @@
 ---
 title: PromLens Helm Chart
 date: 2021-02-20
-summaryImage: "logo.png"
-keepImageRatio: true
+cover:
+  image: "logo.png"
+  relative: true
 #summary: Abscence of Trust, Fear of Conflict, Lack of Commitment, Avoidance of Accountability & Inattention to Results.
-tags: [ "blog", "helm"]
+tags: ["blog", "helm"]
 hideLastModified: true
 ---
 
