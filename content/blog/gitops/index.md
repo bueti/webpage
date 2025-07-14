@@ -90,7 +90,6 @@ While the Helmfile approach covers our base requirements, a production-ready sol
 - **Infrastructure API**: A dedicated API endpoint for triggering deployments programmatically
 - **Developer Interface**: A web UI built on top of the API, providing an intuitive interface for developers to manage their deployments
 - **CI/CD Integration**: Seamless interaction between the API and existing CI/CD systems
-- **History Datastore:** A dedicated datastore that tracks which versions of a service have been deployed by whom. Useful for when the history by the CI/CD system isn’t enough
 
 This approach maintains the declarative benefits of GitOps while eliminating the operational friction that makes traditional implementations cumbersome. Most importantly, it puts deployment control back in the hands of developers without forcing them into Git-based workflows that create more complexity than value.
 
@@ -116,6 +115,5 @@ While this approach solves significant problems with traditional GitOps, it's im
 
 - You're trading Git's distributed, auditable history for deployment flexibility. This is powerful for rapid iteration but may complicate compliance requirements
 - Custom infrastructure requires ongoing maintenance and specialized knowledge, whereas GitOps tooling has established communities and support
-- You need to invest more heavily in your History Datastore and deployment API to match the governance capabilities that Git provides out of the box, though this can enable more flexible rollback scenarios than Git-based approaches
 
 The goal isn't to replace GitOps universally, but to provide a better path for teams where traditional GitOps creates more friction than value. For organizations that have already invested heavily in GitOps tooling and processes, the switching cost may outweigh the benefits. However, for teams starting fresh or those frustrated by GitOps complexity, this approach offers a compelling alternative that maintains the core benefits while reducing operational overhead.
