@@ -83,6 +83,8 @@ This simple distinction enables powerful CI/CD workflows. For example, to enable
 
 The same workflow can be triggered manually for version promotions, giving teams full control over when and what gets deployed.
 
+To rollback a deployment we can utilize Helm's history feature. This gives us quick rollbacks containing all the information of pervious versions with one command.
+
 ### The Complete Vision
 
 While the Helmfile approach covers our base requirements, a production-ready solution might include:
@@ -115,5 +117,6 @@ While this approach solves significant problems with traditional GitOps, it's im
 
 - You're trading Git's distributed, auditable history for deployment flexibility. This is powerful for rapid iteration but may complicate compliance requirements
 - Custom infrastructure requires ongoing maintenance and specialized knowledge, whereas GitOps tooling has established communities and support
+- The Helm history used for rollbacks isn't as permanent as a Git commit.
 
 The goal isn't to replace GitOps universally, but to provide a better path for teams where traditional GitOps creates more friction than value. For organizations that have already invested heavily in GitOps tooling and processes, the switching cost may outweigh the benefits. However, for teams starting fresh or those frustrated by GitOps complexity, this approach offers a compelling alternative that maintains the core benefits while reducing operational overhead.
