@@ -74,6 +74,6 @@ The following blog posts and books inspired the content of this blog post:
 
 - [Love in a time of Corona Virus - Tips, Tricks and Best Practices for Working Remotely](https://www.hanselman.com/blog/LoveInATimeOfCoronaVirusTipsTricksAndBestPracticesForWorkingRemotely.aspx)
 - [GitLab's Guide to All-Remote](https://about.gitlab.com/company/culture/all-remote/guide/)
-- Remote: Office Not Required [[Amazon]](https://www.amazon.de/gp/product/B00CZ7OC46/ref=ppx_yo_dt_b_d_asin_title_o00?ie=UTF8&psc=1)
-- Rework: It doesn’t have to be crazy at work [[Amazon]](https://www.amazon.com/Doesnt-Have-Be-Crazy-Work/dp/0062874780)
+- Remote: Office Not Required [Amazon](https://www.amazon.de/gp/product/B00CZ7OC46/ref=ppx_yo_dt_b_d_asin_title_o00?ie=UTF8&psc=1)
+- Rework: It doesn’t have to be crazy at work [Amazon](https://www.amazon.com/Doesnt-Have-Be-Crazy-Work/dp/0062874780)
 - [Slack keeps interrupting you, but you can stop it ](https://dev.to/nebojsac/slack-keeps-interrupting-you-but-you-can-stop-it-883)
