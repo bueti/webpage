@@ -7,16 +7,16 @@ cover:
   alt: "Git Without GitOps"
   relative: true
 tags: ["blog", "devops", "gitops"]
-hideLastModified: true
+hideLastModified: false
 ---
 
 > **Disclaimer**: All thoughts and opinions shared here are my own and don't represent my employer's views or positions.
 
-When I first encountered GitOps, I was immediately drawn to its philosophy. It seemed like the natural evolution from the DevOps automation tools we were using at the time — Ansible, Puppet, and their contemporaries. The promise of automatic reconciliation, with the traceability of Git seemed the ideal match.
+When I first encountered GitOps, I was immediately drawn to its philosophy. It seemed like the natural evolution from the DevOps automation tools we were using at the time: Ansible, Puppet, and their contemporaries. The promise of automatic reconciliation, with the traceability of Git seemed the ideal match.
 
 But as I began implementing GitOps in practice, two fundamental challenges emerged that made me question whether the conventional approach was truly optimal.
 
-## The Two Core Problems with Traditional GitOps
+## The Two Problems with GitOps
 
 ### The Configuration-Code Divide
 
@@ -35,7 +35,7 @@ Imagine we want to use the short commit SHA as our image tag. The typical flow l
 - We need that SHA to update our deployment configuration
 - This requires a second commit, separate from our original code change
 
-The conventional solution involves creating an automated pipeline that triggers after the build completes, retrieves the new tag, updates the configuration, and commits the change back to the repository. However, this approach introduces several risks:
+A potential solution involves creating an automated pipeline that triggers after the build completes, retrieves the new tag, updates the configuration, and commits the change back to the repository. However, this approach introduces several risks:
 
 - Automated commits can create merge conflicts
 - Pipeline failures can leave deployments in inconsistent states
@@ -47,7 +47,7 @@ I would also argue that this pollutes the Git history with meaningless "Bump Tag
 
 Tools like ArgoCD Image Updater attempt to solve this problem, but they're tightly coupled to specific GitOps platforms. If you prefer simpler alternatives to ArgoCD's complexity, you're out of luck.
 
-Flux offers a similar solution, but it still requires automated commits to your repository—inheriting all the same problems we're trying to avoid.
+Flux offers a similar solution, but it still requires automated commits to your repository, inheriting all the same problems we're trying to avoid.
 
 ## Questioning the Git Requirement
 
@@ -67,7 +67,7 @@ Moreover, I'd say that principles 3 and 4 are implementation details rather than
 When we free ourselves from Git-centric constraints, we can design a deployment system that addresses our core requirements:
 
 - **No commits for version updates**: Eliminate the need to create repository commits just to update deployed version tags
-- **Automatic latest deployments**: Provide a convenient way to automatically deploy the latest version -- whether that's a short SHA commit ID, a version tag, or even `latest`.
+- **Automatic latest deployments**: Provide a convenient way to automatically deploy the latest version -- whether that's a short SHA commit ID, a version tag, or even `latest`
 - **Flexible deployment triggers**: Enable both manual and automated deployment triggers as needed
 
 ### Implementation with Helmfile
@@ -76,10 +76,10 @@ I’m convinced that for many environments ArgoCD et al are an overkill and intr
 
 Therefore, we'll use Helmfile to manage all charts deployed on each cluster through cluster-specific `helmfile.yaml` files. The key is introducing a new Helmfile label: `deployment: [auto|manual]`.
 
-- **Auto Mode**: The deployment pipeline deploys whatever tag is specified in the values file on merge. Perfect for services that should automatically track the latest stable version.
+- **Auto Mode**: The deployment pipeline deploys whatever tag is specified in the values file on merge. Perfect for services that don't change often like supporting software.
 - **Manual Mode**: Helmfile explicitly sets the `image.tag` and deploys the requested version. Ideal for production services that require explicit promotion.
 
-This simple distinction enables powerful CI/CD workflows. For example, to enable PR-based deployments on staging environments, we can trigger a deployment with a simple PR comment like `/deploy my-release cluster=staging`. This would build and deploy `my-release` using the current SHA on the staging cluster.
+This simple distinction enables powerful CI/CD workflows. For example, to enable PR-based deployments on staging environments, we can trigger a deployment with a simple PR comment like `/deploy my-release cluster=staging` or by adding a label to the Pull Request.
 
 The same workflow can be triggered manually for version promotions, giving teams full control over when and what gets deployed.
 
@@ -92,6 +92,7 @@ While the Helmfile approach covers our base requirements, a production-ready sol
 - **Infrastructure API**: A dedicated API endpoint for triggering deployments programmatically
 - **Developer Interface**: A web UI built on top of the API, providing an intuitive interface for developers to manage their deployments
 - **CI/CD Integration**: Seamless interaction between the API and existing CI/CD systems
+- **Revision Store**: A store where we can keep the revision history outside of Kubernetes in case of DR.
 
 This approach maintains the declarative benefits of GitOps while eliminating the operational friction that makes traditional implementations cumbersome. Most importantly, it puts deployment control back in the hands of developers without forcing them into Git-based workflows that create more complexity than value.
 
