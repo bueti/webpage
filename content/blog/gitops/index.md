@@ -1,7 +1,7 @@
 ---
-title: "GitOps Without Git: GitOps ≠ CommitOps"
+title: "GitOps ≠ CommitOps"
 date: 2025-07-07
-summary: What if we don't use Git to manage which version of a service is deployed in GitOps?
+summary: What if we don't use Git to manage which version of a service is deployed?
 cover:
   image: "gitops.png"
   alt: "Git Without GitOps"
