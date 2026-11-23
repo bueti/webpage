@@ -1,12 +1,10 @@
 ---
 title: Why Rails is Awesome
 date: 2020-03-15
-cover:
-  image: "logo.png"
-  relative: true
 summary: Volunteering at iOverlander made me realize what a productivity enabler Rails is.
 tags: ["blog", "rails"]
 hideLastModified: true
+featureimage: "logo.png"
 ---
 
 I'm not a developer! Nevertheless, this doesn't stop me from trying to code things. It might not be pretty but it usually works ;-)

@@ -1,12 +1,10 @@
 ---
 title: How To Work Remotely
 date: 2020-11-15
-cover:
-  image: "remote-work.jpg"
-  relative: true
 summary: This post explains the adjustments that were needed to the way we work in the SRE Team at Ricardo when we went fully remote.
 tags: ["blog", "peopleops"]
 hideLastModified: true
+featureimage: "remote-work.jpg"
 ---
 
 After a nice and calm summer the second wave caught up with us here in Switzerland and we are back to working from home full time.

@@ -1,7 +1,7 @@
 ---
 title: Blog
 cascade:
-  - _target:
+  - target:
       kind: page
     sort: date
     order: desc

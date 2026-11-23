@@ -1,0 +1,98 @@
+# Blowfish theme options: https://blowfish.page/docs/configuration/#theme-parameters
+
+colorScheme = "blowfish"
+defaultAppearance = "light"
+autoSwitchAppearance = true
+
+enableSearch = true
+enableCodeCopy = true
+
+mainSections = ["blog"]
+
+disableImageOptimization = false
+disableTextInHeader = false
+thumbnailAspectRatio = "1.6"
+
+# Comments (Giscus, see layouts/partials/comments.html)
+comments = true
+
+[giscus]
+  repo = "bueti/webpage"
+  repoId = "MDEwOlJlcG9zaXRvcnkyOTgwMzk4NjI="
+  category = "Announcements"
+  categoryId = "DIC_kwDOEcO6Ns4CsJDs"
+  mapping = "pathname"
+  strict = "0"
+  reactionsEnabled = "1"
+  emitMetadata = "0"
+  inputPosition = "top"
+  theme = "preferred_color_scheme"
+  lang = "en"
+  loading = "lazy"
+
+# Analytics (layouts/partials/extend-head.html)
+[plausible]
+  enable = true
+  domain = "bueti-online.ch"
+
+[header]
+  layout = "fixed-fill-blur"
+
+[footer]
+  showMenu = true
+  showCopyright = true
+  showThemeAttribution = true
+  showAppearanceSwitcher = true
+  showScrollToTop = true
+
+[homepage]
+  layout = "custom" # layouts/partials/home/custom.html
+  showRecent = true
+  showRecentItems = 6
+  showMoreLink = true
+  showMoreLinkDest = "/blog/"
+  cardView = true
+  cardViewScreenWidth = false
+
+[article]
+  showDate = true
+  showDateUpdated = false
+  showAuthor = true
+  showHero = true
+  heroStyle = "big"
+  showBreadcrumbs = false
+  showDraftLabel = true
+  showHeadingAnchors = true
+  showPagination = true
+  showReadingTime = true
+  showReadingProgress = true
+  showTableOfContents = true
+  showRelatedContent = true
+  relatedContentLimit = 3
+  showTaxonomies = true
+  showTags = true
+  showWordCount = false
+  showComments = true
+  sharingLinks = ["linkedin", "bluesky", "mastodon", "reddit", "email"]
+
+[list]
+  showHero = false
+  showBreadcrumbs = false
+  showSummary = true
+  showTableOfContents = false
+  showCards = true
+  groupByYear = false
+  cardView = true
+  cardViewScreenWidth = false
+  constrainItemsWidth = false
+
+[sitemap]
+  excludedKinds = ["taxonomy", "term"]
+
+[taxonomy]
+  showTermCount = true
+
+[term]
+  showTableOfContents = false
+  groupByYear = false
+  cardView = true

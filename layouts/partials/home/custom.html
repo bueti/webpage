@@ -1,0 +1,38 @@
+{{- /* Home page (params.homepage.layout = "custom"): intro, then featured projects.
+  Blowfish renders the recent articles below this partial. */ -}}
+{{- $author := site.Params.author }}
+<section class="home-hero">
+  <div class="home-hero-text">
+    <p class="home-eyebrow">{{ $author.headline }}</p>
+    <h1 class="home-name">Hi, I'm Ben.</h1>
+    <div class="home-intro">
+      {{ .Content }}
+    </div>
+    <div class="home-actions">
+      <a class="home-btn home-btn-primary" href="{{ "projects/" | relLangURL }}">See my projects</a>
+      <a class="home-btn" href="{{ "blog/" | relLangURL }}">Read the blog</a>
+      <div class="home-links">{{ partialCached "author-links.html" . }}</div>
+    </div>
+  </div>
+  {{- with $author.image }}
+  {{- with resources.Get . }}
+  {{- $img := .Fill "480x480 Top q90 webp" }}
+  <img class="home-avatar nozoom" src="{{ $img.RelPermalink }}" width="240" height="240" alt="{{ $author.name }}" fetchpriority="high">
+  {{- end }}
+  {{- end }}
+</section>
+
+{{- with site.GetPage "/projects" }}
+{{- $bundle := . }}
+<section class="home-projects" aria-labelledby="home-projects-h">
+  <div class="home-section-head">
+    <h2 id="home-projects-h">Selected projects</h2>
+    <a href="{{ .RelPermalink }}">All projects →</a>
+  </div>
+  <div class="project-grid">
+    {{- range first 4 hugo.Data.projects.featured }}
+    {{- partial "project_card.html" (dict "p" . "bundle" $bundle) }}
+    {{- end }}
+  </div>
+</section>
+{{- end }}

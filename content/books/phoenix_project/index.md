@@ -2,12 +2,9 @@
 title: Phoenix Project
 date: 2018-06-15
 hideLastModified: true
-cover:
-  image: "phoenix_summary.jpg"
-  alt: "Phoenix Project book summary"
-  relative: true
 summary: "In DevOps, we typically define our technology value stream as the process required to convert a business hypothesis into a technology-enabled service that delivers value to the customer."
 tags: [ "books", "devops"]
+featureimage: "phoenix_summary.jpg"
 ---
 
 

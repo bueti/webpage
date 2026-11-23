@@ -2,13 +2,9 @@
 title: Rework
 date: 2019-09-10
 hideLastModified: true
-cover:
-  image: "rework_summary.jpg"
-  alt: "Rework book summary"
-  relative: true
-keepImageRatio: true
 summary: If you can’t fit everything you want to do within 40 hours per week, you need to get better at picking what to do, not work longer hours.
 tags: [ "books", "peopleops"]
+featureimage: "rework_summary.jpg"
 ---
 
 ## Summary and Quotes of “Rework: It doesn’t have to be crazy at work”

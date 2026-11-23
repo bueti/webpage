@@ -1,0 +1,25 @@
+disabled = false
+locale = "en"
+label = "English"
+weight = 1
+title = "Benjamin Bütikofer"
+
+[params]
+  displayName = "EN"
+  isoCode = "en"
+  rtl = false
+  dateFormat = "2 January 2006"
+  description = "Portfolio and blog of Benjamin Bütikofer: apps, tools and writing on SRE and DevOps"
+  copyright = "© Benjamin Bütikofer"
+
+[params.author]
+  name = "Benjamin Bütikofer"
+  image = "img/me.png"
+  imageQuality = 90
+  headline = "Founding engineer at Poolside"
+  links = [
+    { github = "https://github.com/bueti" },
+    { linkedin = "https://linkedin.com/in/benjamin-bütikofer-59584b64" },
+    { bluesky = "https://bsky.app/profile/bueti-online.ch" },
+    { mastodon = "https://hachyderm.io/@bbu" },
+  ]
