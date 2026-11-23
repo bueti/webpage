@@ -1,0 +1,5 @@
+{{- with site.Params.plausible }}
+{{- if and .enable hugo.IsProduction }}
+<script defer data-domain="{{ .domain }}" src="https://plausible.io/js/script.js"></script>
+{{- end }}
+{{- end }}

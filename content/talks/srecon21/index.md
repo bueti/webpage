@@ -1,10 +1,9 @@
 ---
 title: SREcon 21
 date: 2021-10-15
-summaryImage: "srecon.png"
-keepImageRatio: true
 summary: My recommended talks of SREcon 21 and of course also mine!
 tags: [ "blog", "peopleops"]
+featureimage: "srecon.png"
 ---
 
 SREcon 21 was my second SREcon after 2016 and the first conference where I had a talk. Unfortunately, the talk was prerecorded but that also made it easier, nevertheless once they pressed play and I heard myself talking I was just as nervous!

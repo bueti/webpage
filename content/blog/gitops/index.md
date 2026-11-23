@@ -2,12 +2,9 @@
 title: "GitOps ≠ CommitOps"
 date: 2025-07-07
 summary: What if we don't use Git to manage which version of a service is deployed?
-cover:
-  image: "gitops.png"
-  alt: "Git Without GitOps"
-  relative: true
 tags: ["blog", "devops", "gitops"]
 hideLastModified: false
+featureimage: "gitops.png"
 ---
 
 > **Disclaimer**: All thoughts and opinions shared here are my own and don't represent my employer's views or positions.

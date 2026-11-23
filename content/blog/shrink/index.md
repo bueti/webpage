@@ -1,12 +1,10 @@
 ---
 title: My Go-Based URL Shortener Project
 date: 2024-03-15
-cover:
-  image: "logo.png"
-  relative: true
 summary: Shrink.ch, a user-friendly Go-based URL shortener with features auto-generated and custom short URLs, QR-code generation, and visit tracking.
 tags: ["blog", "go"]
 hideLastModified: true
+featureimage: "logo.png"
 ---
 
 At work, I'm usually all about Go for CLI stuff and automation. After dabbling in Rails and creating a bunch of web apps, I figured it was time to try the web world with Go. The challenge? Building an URL shortener. And hey, since the [shrink.ch](https://shrink.ch) domain was up for grabs, why not give it a shot?

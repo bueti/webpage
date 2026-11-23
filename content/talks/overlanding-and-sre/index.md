@@ -1,11 +1,10 @@
 ---
 title: Lessons in Ops and SRE
 date: 2022-05-20
-summaryImage: "logo.png"
-keepImageRatio: true
 summary: How traveling the Americas shaped my views of Ops, SRE & the World.
 tags: [ "blog", "talks" ]
 hideLastModified: true
+featureimage: "logo.png"
 ---
 
 ## How traveling the Americas shaped my views of Ops, SRE & the World

@@ -1,22 +1,22 @@
 {{- define "main" }}
-<div class="projects-wide">
-  <header class="page-header">
+<div class="projects-page">
+  <header class="projects-header">
     <h1>{{ .Title }}</h1>
     {{- with .Description }}
-    <div class="post-description">{{ . | markdownify }}</div>
+    <p>{{ . | markdownify }}</p>
     {{- end }}
   </header>
 
   <h2 class="projects-heading">Apps and tools</h2>
   <div class="project-grid">
-    {{- range site.Data.projects.featured }}
+    {{- range hugo.Data.projects.featured }}
     {{- partial "project_card.html" (dict "p" . "bundle" $) }}
     {{- end }}
   </div>
 
   <h2 class="projects-heading">Open source and contributions</h2>
   <ul class="oss-list">
-    {{- range site.Data.projects.opensource }}
+    {{- range hugo.Data.projects.opensource }}
     <li class="oss-item">
       <div class="oss-head">
         <a class="oss-name" href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a>
