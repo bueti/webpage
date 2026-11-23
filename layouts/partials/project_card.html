@@ -4,13 +4,13 @@
 <article class="project-card">
   {{- with $p.image }}
   {{- with $.bundle.Resources.GetMatch . }}
-  {{- $sm := .Fill "800x500 top webp q80" }}
-  {{- $lg := .Fill "1280x800 top webp q80" }}
+  {{- $sm := .Fill "960x600 top webp q90" }}
+  {{- $lg := .Fill "1600x1000 top webp q90" }}
   <div class="project-shot">
     {{- if $primary }}<a href="{{ $primary.url }}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">{{ end }}
-    <img src="{{ $lg.RelPermalink }}" srcset="{{ $sm.RelPermalink }} 800w, {{ $lg.RelPermalink }} 1280w"
-      sizes="(max-width: 720px) 100vw, 520px" width="{{ $lg.Width }}" height="{{ $lg.Height }}"
-      alt="Screenshot of {{ $p.name }}" loading="lazy" decoding="async">
+    <img src="{{ $lg.RelPermalink }}" srcset="{{ $sm.RelPermalink }} 960w, {{ $lg.RelPermalink }} 1600w"
+      sizes="(max-width: 767px) 100vw, 640px" width="{{ $lg.Width }}" height="{{ $lg.Height }}"
+      alt="Screenshot of {{ $p.name }}" loading="lazy" decoding="async" class="nozoom">
     {{- if $primary }}</a>{{ end }}
     {{- with $p.note }}<span class="project-note">{{ . }}</span>{{ end }}
   </div>

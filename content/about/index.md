@@ -4,7 +4,7 @@ hideLastModified: true
 showInMenu: true
 ---
 
-I like mountains, photography, and travelling. For a living I am doing "computer things". I am in the sphere between software development and operations and currently work as a founding engineer at [Poolside](https://poolside.ai) since February 2024. On the side I build apps and tools; you can find them on the [projects page](/projects/).
+I like mountains, photography, and travelling. For a living I am doing "computer things". I am in the sphere between software development and operations and currently work at [NVIDIA](https://www.nvidia.com), which I joined as part of the deal between Poolside and NVIDIA. Before that I was a founding engineer at [Poolside](https://poolside.ai), starting in February 2024. On the side I build apps and tools; you can find them on the [projects page](/projects/).
 
 The interactions between teams and departments in work environments fascinate me. The book ["The Phoenix Project"]({{< ref "phoenix_project" >}}) opened my eyes and had a tremendous impact on me and my career. Check out my LinkedIn page for more details.
 
