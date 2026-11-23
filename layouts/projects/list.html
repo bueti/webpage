@@ -1,0 +1,32 @@
+{{- define "main" }}
+<div class="projects-wide">
+  <header class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{- with .Description }}
+    <div class="post-description">{{ . | markdownify }}</div>
+    {{- end }}
+  </header>
+
+  <h2 class="projects-heading">Apps and tools</h2>
+  <div class="project-grid">
+    {{- range site.Data.projects.featured }}
+    {{- partial "project_card.html" (dict "p" . "bundle" $) }}
+    {{- end }}
+  </div>
+
+  <h2 class="projects-heading">Open source and contributions</h2>
+  <ul class="oss-list">
+    {{- range site.Data.projects.opensource }}
+    <li class="oss-item">
+      <div class="oss-head">
+        <a class="oss-name" href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a>
+        <span class="oss-stack">{{ delimit .stack " · " }}</span>
+      </div>
+      <p class="oss-desc">{{ .description }}{{ with .post }} <a href="{{ . | relURL }}">Read the post →</a>{{ end }}</p>
+    </li>
+    {{- end }}
+  </ul>
+
+  <p class="projects-more">More on <a href="https://github.com/bueti" target="_blank" rel="noopener">GitHub ↗</a></p>
+</div>
+{{- end }}

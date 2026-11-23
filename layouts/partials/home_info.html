@@ -1,0 +1,33 @@
+{{- /* Overrides PaperMod's home_info: the intro, then featured projects, then the theme's post list follows. */ -}}
+{{- with site.Params.homeInfoParams }}
+<article class="first-entry home-info">
+    <header class="entry-header">
+        <h1>{{ .Title | markdownify }}</h1>
+    </header>
+    <div class="entry-content">
+        {{ .Content | markdownify }}
+    </div>
+    <footer class="entry-footer">
+        {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
+    </footer>
+</article>
+{{- end -}}
+
+{{- with site.GetPage "/projects" }}
+{{- $bundle := . }}
+<section class="home-projects" aria-labelledby="home-projects-h">
+  <div class="home-section-head">
+    <h2 id="home-projects-h">Projects</h2>
+    <a href="{{ .RelPermalink }}">All projects →</a>
+  </div>
+  <div class="project-grid">
+    {{- range first 4 site.Data.projects.featured }}
+    {{- partial "project_card.html" (dict "p" . "bundle" $bundle) }}
+    {{- end }}
+  </div>
+</section>
+<div class="home-section-head home-writing-head">
+  <h2>Writing</h2>
+  <a href="{{ "blog/" | relURL }}">All posts →</a>
+</div>
+{{- end }}

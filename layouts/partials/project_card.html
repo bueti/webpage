@@ -1,0 +1,28 @@
+{{- /* A featured project card. Context: dict "p" (entry from data/projects.yaml) "bundle" (the /projects page, which holds the images). */ -}}
+{{- $p := .p }}
+{{- $primary := index ($p.links | default slice) 0 }}
+<article class="project-card">
+  {{- with $p.image }}
+  {{- with $.bundle.Resources.GetMatch . }}
+  {{- $sm := .Fill "800x500 top webp q80" }}
+  {{- $lg := .Fill "1280x800 top webp q80" }}
+  <div class="project-shot">
+    {{- if $primary }}<a href="{{ $primary.url }}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">{{ end }}
+    <img src="{{ $lg.RelPermalink }}" srcset="{{ $sm.RelPermalink }} 800w, {{ $lg.RelPermalink }} 1280w"
+      sizes="(max-width: 720px) 100vw, 520px" width="{{ $lg.Width }}" height="{{ $lg.Height }}"
+      alt="Screenshot of {{ $p.name }}" loading="lazy" decoding="async">
+    {{- if $primary }}</a>{{ end }}
+    {{- with $p.note }}<span class="project-note">{{ . }}</span>{{ end }}
+  </div>
+  {{- end }}
+  {{- end }}
+  <div class="project-body">
+    <h3 class="project-title">{{ $p.name }}</h3>
+    <p class="project-tagline">{{ $p.tagline }}</p>
+    <p class="project-desc">{{ $p.description }}</p>
+    <ul class="project-stack">{{ range $p.stack }}<li>{{ . }}</li>{{ end }}</ul>
+    {{- with $p.links }}
+    <p class="project-links">{{ range . }}<a href="{{ .url }}" target="_blank" rel="noopener">{{ .label }} ↗</a>{{ end }}</p>
+    {{- end }}
+  </div>
+</article>
