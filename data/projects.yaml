@@ -1,0 +1,107 @@
+# Projects shown on the home page (featured: true) and on /projects/.
+# image: a file in content/projects/. private: the source is closed, so the
+# screenshot uses demo data; `note` says what the screenshot shows.
+
+featured:
+  - name: AutoPal
+    tagline: Car costs, trips and service for iPhone, iPad and Mac
+    image: autopal.jpg
+    private: true
+    note: Closed source · screenshot with demo data
+    description: >-
+      A native app for everything a car costs: fuel and charging, service,
+      insurance, tolls and parking. It scans receipts on the device, forecasts
+      the next 12 months, records trips with a driving score, and syncs through
+      iCloud. No account and no tracking.
+    stack: [Swift, SwiftUI, SwiftData, Swift Charts, Vision, CloudKit]
+    links:
+      - { label: App Store, url: "https://apps.apple.com/app/autopal-car-costs-trips/id6831771195" }
+      - { label: Website, url: "https://autopal.bueti-online.ch/" }
+      - { label: Support, url: "https://github.com/bueti/autopal-support" }
+
+  - name: Training Hub
+    tagline: Personal training dashboard
+    image: training-hub.jpg
+    private: true
+    note: Private · screenshot with generated demo data
+    description: >-
+      Matches every session of a 16-week training plan against what actually
+      happened. Activities come from Strava (and my watch through it), strength
+      tests and body scans from eGym's unofficial member API. Tracks heart-rate
+      drift and aerobic efficiency, and publishes the plan as a calendar feed.
+    stack: [JavaScript, Cloudflare Pages Functions, Workers KV, Strava API, Cloudflare Access]
+
+  - name: Swiss Tax Calculator
+    tagline: Compare income and wealth tax across Swiss municipalities
+    image: tax-calculator.jpg
+    private: true
+    note: Source private · example household
+    description: >-
+      Uses the official tariffs of the Federal Tax Administration (ESTV) and
+      handles RSU vesting over several years. A Cloudflare Worker proxies and
+      caches the ESTV API; inputs stay in the browser and nothing is stored on
+      the server.
+    stack: [JavaScript, Cloudflare Workers, ESTV API]
+    links:
+      - { label: Live, url: "https://tax.bueti-online.ch/" }
+
+  - name: Status Aggregator
+    tagline: Third-party status pages in one dashboard
+    image: status-aggregator.jpg
+    description: >-
+      Polls Statuspage.io pages and RSS/Atom incident feeds and shows every
+      provider you depend on in one view. Go backend with Huma, SvelteKit
+      frontend.
+    stack: [Go, Huma, SvelteKit, Svelte 5]
+    links:
+      - { label: Live, url: "https://status.bueti-online.ch/" }
+      - { label: Source, url: "https://github.com/bueti/status-aggregator" }
+
+  - name: Gran Viaje
+    tagline: Our travel blog, moved from WordPress to Hugo
+    image: granviaje.jpg
+    description: >-
+      Three years overlanding from Halifax to Montevideo. I wrote an exporter
+      for posts and photo galleries and a theme from scratch: the route drawn on
+      the home page, justified galleries, 360° panoramas from R2, and maps that
+      only load on a click.
+    stack: [Hugo, Python, Cloudflare Workers, R2]
+    links:
+      - { label: Website, url: "https://www.granviaje.ch/" }
+
+opensource:
+  - name: skilllint
+    description: Linter for agent skill files (SKILL.md) following the agentskills.io specification, with named rules and per-rule severity.
+    stack: [Go]
+    url: https://github.com/bueti/skilllint
+  - name: skillgen
+    description: Generates agent skill files from a cobra command tree, the way cobra generates shell completions.
+    stack: [Go]
+    url: https://github.com/bueti/skillgen
+  - name: rss-summarizer
+    description: RSS reader that summarizes articles with an LLM and rates them by how much they matter to you.
+    stack: [Go]
+    url: https://github.com/bueti/rss-summarizer
+  - name: bocker
+    description: CLI that backs up a PostgreSQL database into a Docker image and restores it again.
+    stack: [Go, Docker]
+    url: https://github.com/bueti/bocker
+    post: /blog/bocker/
+  - name: shrinkster
+    description: URL shortener with custom paths, QR codes and visit counts.
+    stack: [Go]
+    url: https://github.com/bueti/shrinkster
+    post: /blog/shrink/
+  - name: github-analyzer
+    description: Web app and CLI that analyzes a GitHub repository through the GitHub API.
+    stack: [Go]
+    url: https://github.com/bueti/github-analyzer
+  - name: go-worktree
+    description: A small wrapper around git worktree.
+    stack: [Go]
+    url: https://github.com/bueti/go-worktree
+  - name: iOverlander
+    description: Volunteer work on the overlanders' map. Upgraded the app from Rails 3.2 to 5.2, containerized it, automated deploys and added features.
+    stack: [Ruby on Rails, Docker]
+    url: https://www.ioverlander.com/
+    post: /blog/ioverlander-rails/
